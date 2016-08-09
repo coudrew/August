@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practical Coding Tasks: Arrays</title>
+        <link rel="stylesheet" href="arrays.css">
+    </head>
+    <body>
+        <div id="outputModal" class="modal">
+            <span id="closeButton" class="close">Close</span>
+            <div class="modal-content">
+                <div id="output"></div>
+            </div>
+        </div>
+        <h1>Practical Coding Tasks: Arrays</h1>
+        
+        <div id="task1">
+            <h3>Take 3 inputs from user, assign to an array, and display the array's content</h3>
+            <form>
+                <span>Enter 3 values:</span>
+                <input type="text" id="input1a"/>
+                <input type="text" id="input1b"/>
+                <input type="text" id="input1c"/>
+            </form>
+            <button id="task1Button">Submit</button>
+        </div>
+        <div id="task2">
+            <h3>Take a value, push to an array, and display that array and its length</h3>
+            <form>
+                <span>Enter a value:</span>
+                <input type="text" id="input2"/>
+            </form>
+            <button id="task2Button">Submit</button>       
+        </div>
+        <div id="task3">
+            <h3>Add and remove to front and back of array with: shift, unshift, push, and pop</h3>
+            <form>
+                <span>Enter a value (for "push" and "unshift" operations only):</span>
+                <input type="text" id="input3"/>
+                <br/>
+                <span>Select operation:</span><br/>
+                <input type="radio" name="arrayOp" value="push" checked/>Push<br/>
+                <input type="radio" name="arrayOp" value="pop"/>Pop<br/>
+                <input type="radio" name="arrayOp" value="unshift"/>Unshift<br/>
+                <input type="radio" name="arrayOp" value="shift"/>Shift<br/>
+            </form>
+            <button id="task3Button">Execute</button>
+            
+        </div>
+        <div id="task4">
+            <h3>Add and element to a specific index of an array</h3>
+            <form>
+                <span>Enter value to add:</span>
+                <input type="text" id="input4a"/><br/>
+                <span>Enter index to add to:</span>
+                <input type="text" id="input4b"><br/>
+            </form>
+            <button id="task4Button">Execute</button>
+        </div>
+        <div id="task5">
+            <h3>Display 10 element array with for loop</h3>
+            <button id="task5Button">Display</button>
+        </div>
+        <div id="task6">
+            <h3>Search an array for a specified value</h3>
+            <form>
+                <span>Enter the name of a country (case-insensitive but spellin maters):</span>
+                <input type="text" id="input6"/>
+            </form>
+            <button id="task6Button">Search</button>
+        </div>
+        
+        <script src="Arrays.js"></script>
+    </body>
+</html>
