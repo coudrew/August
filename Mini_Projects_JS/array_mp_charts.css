@@ -1,0 +1,12 @@
+.chart {
+    display: none;
+    position: absolute;
+}
+
+.chartControls {
+    
+}
+.chartControls input {
+    position: absolute;
+    right: 0;
+}
