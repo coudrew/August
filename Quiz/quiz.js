@@ -15,8 +15,8 @@ function poseQuestion(questionData){
     var question = document.createElement('p');
     var answers = document.createElement('form');
     //initialize question
-    questionBlock.id = questionData.questionNumber; 
-    question.innerHTML = `<h4>${questionData.domain}</h4><br/><span>${questionData.question}?</span>`;
+    questionBlock.id = questionData.questionNumber;
+    question.innerHTML = `<h4>${questionData.domain}</h4><br/><span>${questionData.question}</span>`;
     //iterate through current question's answers array to generate radio buttons and append to the form
     questionData.answers.forEach(function(answer, index){
        var currentAnswer = document.createElement('input');
@@ -38,7 +38,28 @@ function poseQuestion(questionData){
 
 //check answers
 function checkQuiz(){
-    
+
 }
-var testQuestion = new QuestionData('space', 'how much space is there', ['lots', 'none', "as much as their's time at least"],2,1);
-poseQuestion(testQuestion);
+
+//populate the quiz
+function populate(){
+  //create an array to hold previously selected indices
+  var pseudoRandomPrevious = [-1]; //added -1 to avoid null array errors, will not conflict with operation of p random numbers
+  for (i=0; i<5; i++){
+    //create random number, check against previously selected indices, recreate if necessary
+    var pseudoRandom = Math.floor(Math.random() * 8);
+    while (pseudoRandomPrevious.filter(function(el){return el === pseudoRandom}).length > 0){
+      pseudoRandom = Math.floor(Math.random() * 8);
+    }
+    var currentQuestion = questionDataArray[pseudoRandom];
+    //create QuestionData obj from questionDataArray, post to document
+    var currentQuestionData = new QuestionData(currentQuestion[0], currentQuestion[1], currentQuestion[2], currentQuestion[3], i);
+    poseQuestion(currentQuestionData);
+    //add current pseudoRandom to array of indices
+    pseudoRandomPrevious.push(pseudoRandom);
+  }
+
+}
+populate();
+/*var testQuestion = new QuestionData('space', 'how much space is there', ['lots', 'none', "as much as their's time at least"],2,1);
+poseQuestion(testQuestion);*/
