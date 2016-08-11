@@ -4,7 +4,9 @@
     position: absolute;
     left: 30%;
     width: 40%;
-    height: 40%;
+    height: auto;
+    min-height: 40%;
+    max-height: 70%;
     top: 20%;
     z-index: 1;
     border-style: solid;
@@ -17,7 +19,7 @@
     border-width: 1px;
     border-radius: 5px;
     margin: 10px;
-    height: 40vh;
+    height: 45vh;
 }
 
 .controlBtn{
@@ -25,7 +27,7 @@
     border-style: hidden;
     border-radius: 5px;
     height: 5vh;
-    font-size: 1.5em;
+    font-size: 1sem;
 }
 .reviewBtn{
     padding: 10px;
@@ -52,9 +54,9 @@
     position: absolute;
     background-color: cornflowerblue;
     width: 80%;
-    height: 40%;
+    height: auto;
     left: 10%;
-    bottom: 10%;
+    top: 40%;
     border-style: solid;
     border-color: rgb(180,180,255);
     border-width: 1px;
