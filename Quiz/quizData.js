@@ -11,6 +11,7 @@ var questionDataArray = [
   ['Music theory', 'In western European music, what is the smallest interval between two notes?',
   ['Tone', 'Semi-tone', 'Octave', 'Scale'], 1],
 
+    
   ['Music theory', 'A chord has...',
   ['3 or more notes', '2 notes', '4 or more notes'], 2],
 
@@ -18,7 +19,7 @@ var questionDataArray = [
   ['Root, third, and fifth', 'Root, fifth, and seventh', 'Root, fifth, and 8va'], 0],
 
   ['Music Production', 'Sending a drum mix to an aux channel, applying a high-ratio compression, and mixing that channel back in with the original signal is called...',
-  ['New York Compression', 'Parallel Compression', 'Both of these'], 3],
+  ['New York Compression', 'Parallel Compression', 'Both of these'], 2],
 
   ['Music Production', 'A resonant filter...',
   ['Applies a tape saturation effect to a signal', 'Boosts a band of frequencies around the cutoff', 'Reduces harmonic distortion'], 1],
