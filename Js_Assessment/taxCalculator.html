@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tax Calculator</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="taxCalculator.css">
+    </head>
+    <body>
+        <div class="container-fluid main">
+            <div class="row" id="head">
+                <h1 class="col-xs-12 text-center banner">Salary Tax Calculator</h1>
+                <h2 class="col-xs-12 text-center banner">Enter gross salary below to calculate tax owing (excluding National Insurance)</h2>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 dataBox">
+                    <div class="text-center">
+                        <span class="text-center">Enter Gross Salary here:</span>
+                        <input type="text" id="grossInput" class="text-center"/><br/><br/>
+                        <button id="grossBtn" class="text-center">Calculate Tax</button>
+                    </div>
+                </div>
+                <div class="col-xs-6 dataBox">
+                    <div class="row">
+                        <span class="col-xs-6">Gross salary:</span><span class="col-xs-6" id="grossOutput">-</span>
+                    </div>
+                    <div class="row">
+                        <span class="col-xs-6">Tax-free allowance:</span><span class="col-xs-6" id="allowance">-</span>
+                    </div>
+                    <div class="row">
+                        <span class="col-xs-6">Tax paid at 20%:</span><span class="col-xs-6" id="amtAt20">-</span>
+                    </div>
+                    <div class="row">
+                        <span class="col-xs-6">Tax paid at 40%:</span><span class="col-xs-6" id="amtAt40">-</span>
+                    </div>
+                    <div class="row">
+                        <span class="col-xs-6">Net salary:</span><span class="col-xs-6" id="net">-</span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <script src="taxCalculator.js"></script>
+    </body>
+
+</html>

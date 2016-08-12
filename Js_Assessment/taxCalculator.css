@@ -1,0 +1,22 @@
+.main{
+    border-style: solid;
+    border-radius: 1vw;
+    border-color: cornflowerblue;
+    border-width: 2px;
+    margin: 1vw;
+    background-color: rgb(220,220,255);
+}
+.dataBox{
+    padding: 4vw;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8em;
+}
+.banner{
+    margin: 2vw;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 200;
+}
+#head{
+    border-bottom-style: double;
+    border-bottom-color: cornflowerblue;
+}
