@@ -1,0 +1,5 @@
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\PresidentSwitch\PresidentSwitch\bin\Debug\PresidentSwitch.exe.config
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\PresidentSwitch\PresidentSwitch\bin\Debug\PresidentSwitch.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\PresidentSwitch\PresidentSwitch\bin\Debug\PresidentSwitch.pdb
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\PresidentSwitch\PresidentSwitch\obj\Debug\PresidentSwitch.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\PresidentSwitch\PresidentSwitch\obj\Debug\PresidentSwitch.pdb

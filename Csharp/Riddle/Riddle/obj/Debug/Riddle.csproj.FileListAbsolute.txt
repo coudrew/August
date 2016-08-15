@@ -1,0 +1,6 @@
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\Riddle\Riddle\bin\Debug\Riddle.exe.config
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\Riddle\Riddle\bin\Debug\Riddle.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\Riddle\Riddle\bin\Debug\Riddle.pdb
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\Riddle\Riddle\obj\Debug\Riddle.csprojResolveAssemblyReference.cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\Riddle\Riddle\obj\Debug\Riddle.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\Riddle\Riddle\obj\Debug\Riddle.pdb

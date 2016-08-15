@@ -1,0 +1,6 @@
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.exe.config
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.csprojResolveAssemblyReference.cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.pdb
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.pdb

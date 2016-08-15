@@ -1,0 +1,6 @@
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\forForEach\forForEach\bin\Debug\forForEach.exe.config
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\forForEach\forForEach\obj\Debug\forForEach.csprojResolveAssemblyReference.cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\forForEach\forForEach\bin\Debug\forForEach.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\forForEach\forForEach\bin\Debug\forForEach.pdb
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\forForEach\forForEach\obj\Debug\forForEach.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\forForEach\forForEach\obj\Debug\forForEach.pdb

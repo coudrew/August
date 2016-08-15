@@ -1,0 +1,6 @@
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresList\DataStructuresList\bin\Debug\DataStructuresList.exe.config
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresList\DataStructuresList\bin\Debug\DataStructuresList.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresList\DataStructuresList\bin\Debug\DataStructuresList.pdb
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresList\DataStructuresList\obj\Debug\DataStructuresList.csprojResolveAssemblyReference.cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresList\DataStructuresList\obj\Debug\DataStructuresList.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresList\DataStructuresList\obj\Debug\DataStructuresList.pdb
