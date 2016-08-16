@@ -1,0 +1,6 @@
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\OOPMiniProj\OOPMiniProj\bin\Debug\OOPMiniProj.exe.config
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\OOPMiniProj\OOPMiniProj\bin\Debug\OOPMiniProj.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\OOPMiniProj\OOPMiniProj\bin\Debug\OOPMiniProj.pdb
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\OOPMiniProj\OOPMiniProj\obj\Debug\OOPMiniProj.csprojResolveAssemblyReference.cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\OOPMiniProj\OOPMiniProj\obj\Debug\OOPMiniProj.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\OOPMiniProj\OOPMiniProj\obj\Debug\OOPMiniProj.pdb

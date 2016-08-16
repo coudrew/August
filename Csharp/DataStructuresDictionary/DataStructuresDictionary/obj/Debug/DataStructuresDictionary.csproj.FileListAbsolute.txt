@@ -1,0 +1,6 @@
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresDictionary\DataStructuresDictionary\bin\Debug\DataStructuresDictionary.exe.config
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresDictionary\DataStructuresDictionary\bin\Debug\DataStructuresDictionary.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresDictionary\DataStructuresDictionary\bin\Debug\DataStructuresDictionary.pdb
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresDictionary\DataStructuresDictionary\obj\Debug\DataStructuresDictionary.csprojResolveAssemblyReference.cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresDictionary\DataStructuresDictionary\obj\Debug\DataStructuresDictionary.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\DataStructuresDictionary\DataStructuresDictionary\obj\Debug\DataStructuresDictionary.pdb

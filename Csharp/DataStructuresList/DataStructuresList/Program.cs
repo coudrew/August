@@ -102,28 +102,7 @@ namespace DataStructuresList
             }
             Console.WriteLine("\n**************************");
         }
-        static Book Search(string searchFor, string searchBy)
-        {
-			Book book = new Book("NOT FOUND", "NOT FOUND");
-            foreach (Book _book in books)
-            {
-                if (searchBy == "title")
-                {
-                    if (_book.Title == searchFor)
-                    {
-						book = _book;
-						Console.WriteLine(_book.Title);
-                    }
-                } else if (searchBy == "author")
-                {
-                    if (_book.Author == searchFor)
-                    {
-						book = _book;
-                    }
-                }
-            }
-            return book;
-        }
+        
         static void SearchBooks()
         {
             Console.Clear();
