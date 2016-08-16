@@ -1,0 +1,8 @@
+/Applications/XAMPP/xamppfiles/htdocs/August/Csharp/DataStructuresList/DataStructuresList/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
+/Applications/XAMPP/xamppfiles/htdocs/August/Csharp/DataStructuresList/DataStructuresList/obj/Debug/DataStructuresList.exe
+/Applications/XAMPP/xamppfiles/htdocs/August/Csharp/DataStructuresList/DataStructuresList/obj/Debug/DataStructuresList.pdb
+/Applications/XAMPP/xamppfiles/htdocs/August/Csharp/DataStructuresList/DataStructuresList/bin/Debug/DataStructuresList.exe.config
+/Applications/XAMPP/xamppfiles/htdocs/August/Csharp/DataStructuresList/DataStructuresList/bin/Debug/DataStructuresList.exe.mdb
+/Applications/XAMPP/xamppfiles/htdocs/August/Csharp/DataStructuresList/DataStructuresList/bin/Debug/DataStructuresList.pdb
+/Applications/XAMPP/xamppfiles/htdocs/August/Csharp/DataStructuresList/DataStructuresList/bin/Debug/DataStructuresList.exe
+/Applications/XAMPP/xamppfiles/htdocs/August/Csharp/DataStructuresList/DataStructuresList/obj/Debug/DataStructuresList.exe.mdb

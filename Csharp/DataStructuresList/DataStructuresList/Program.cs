@@ -104,23 +104,25 @@ namespace DataStructuresList
         }
         static Book Search(string searchFor, string searchBy)
         {
-            foreach (Book book in books)
+			Book book = new Book("NOT FOUND", "NOT FOUND");
+            foreach (Book _book in books)
             {
                 if (searchBy == "title")
                 {
-                    if (book.Title == searchFor)
+                    if (_book.Title == searchFor)
                     {
-                        return book;
+						book = _book;
+						Console.WriteLine(_book.Title);
                     }
                 } else if (searchBy == "author")
                 {
-                    if (book.Author == searchFor)
+                    if (_book.Author == searchFor)
                     {
-                        return book;
+						book = _book;
                     }
                 }
             }
-            return;
+            return book;
         }
         static void SearchBooks()
         {
@@ -129,8 +131,25 @@ namespace DataStructuresList
             string action = Console.ReadLine();
             Console.WriteLine("Search for: ");
             string target = Console.ReadLine();
-            Book book = Search(target, action);
-            Console.WriteLine(book.Title + ", by " + book.Author);
+			foreach (Book _book in books)
+			{
+				if (action == "a")
+				{
+					if (_book.Author == target)
+					{
+						Console.WriteLine(_book.Title + ", by " + _book.Author);
+					}
+				}
+				if (action == "t")
+				{
+					if (_book.Title == target)
+					{
+						Console.WriteLine(_book.Title + ", by" + _book.Author);
+					}
+				}
+			}
+            //Book book = Search(target, action);
+            //Console.WriteLine(_book.Title + ", by " + book.Author);
         }
     }
 }
