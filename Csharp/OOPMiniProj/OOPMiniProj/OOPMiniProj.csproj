@@ -44,11 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interval.cs" />
+    <Compile Include="MainView.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Progression.cs" />
+    <Compile Include="ProgressionView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scale.cs" />
+    <Compile Include="ScaleView.cs" />
     <Compile Include="Triad.cs" />
     <Compile Include="TriadFirstInversion.cs" />
+    <Compile Include="TriadView.cs" />
+    <Compile Include="View.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

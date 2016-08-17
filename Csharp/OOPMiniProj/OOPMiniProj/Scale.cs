@@ -38,6 +38,17 @@ namespace OOPMiniProj
             }
             return steps;
         }
+        public void ShowScale()
+        {
+            Console.Clear();
+            Console.WriteLine("***** Scale {0} {1} *****", this.Root, this.Major == false ? "Minor" : "Major");
+            //Console.WriteLine(this.Root);
+            //Console.WriteLine(this.Major);
+            for (int i = 0; i < this.Steps.Length; i++)
+            {
+                Console.WriteLine(this.Steps[i]);
+            }
+        }
         //Constructors
         //default C major scale
         public Scale()

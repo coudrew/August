@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace OOPMiniProj
 {
+    [System.Obsolete("deprecated, use Triad.Invert()")]
+    //////////////////////////////////////////////////////////////////////////
+    ///////////////////this class has been deprecated, use Triad.Invert() instead
     class TriadFirstInversion : Triad
     {
         public TriadFirstInversion(Scale scale, int step) : base( scale,  step)
@@ -24,4 +27,4 @@ namespace OOPMiniProj
             Console.WriteLine(this.Third + " " + this.Fifth + " " + this.Root);
         }
     }
-}
+}*/

@@ -8,24 +8,24 @@ namespace OOPMiniProj
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Scale testScale = new Scale("C", true);
-            Console.WriteLine(testScale.Root);
-            Console.WriteLine(testScale.Major);
-            for (int i = 0; i < testScale.Steps.Length; i++)
-            {
-                Console.WriteLine(testScale.Steps[i]);
-            }
-            Interval testInterval = new Interval(testScale, 0, 2);
-            Console.WriteLine("*********Interval**********");
-            Console.WriteLine("Base: " + testInterval.BaseNote);
-            Console.WriteLine("Interval: " + testInterval.IntervalNote);
-            Triad testTriad = new Triad(testScale, 4);
-            testTriad.Play();
-            TriadFirstInversion testInversion = new TriadFirstInversion(testScale, 4);
-            testInversion.Play();
+        public static Progression progression = new Progression();
+        public static Scale scale = new Scale();
+        public static bool running = true;
+        public static string titleBar = "\n***** Chordia *****";
+        public static MainView mainView = new MainView("\n***** Chordia *****", true);
+        public static ProgressionView progressionView = new ProgressionView("\n***** Progression *****", true);
+        public static ScaleView scaleView = new ScaleView("\n***** Scale *****", true);
+        public static TriadView triadView = new TriadView("\n***** Triad *****", true);
 
+        static void Main(string[] args)
+        {   
+            mainView.ShowView();
+        }
+        //method to clear screen and display the title bar. keeping it DRY
+        public static void ClearTitle()
+        {
+            Console.Clear();
+            Console.WriteLine(titleBar);
         }
     }
 }
