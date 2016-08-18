@@ -49,13 +49,30 @@ namespace OOPMiniProj
             string action = Console.ReadLine();
             switch (action)
             {
-                case "R":
+                case "r":
                     Console.WriteLine("Enter index number to swap from:");
                     int swapFrom = Convert.ToInt16(Console.ReadLine());
                     Console.WriteLine("Enter index number to swap to:");
                     int swapTo = Convert.ToInt16(Console.ReadLine());
                     Program.progression.ReorderProgression(swapFrom, swapTo);
+                    Console.WriteLine("Swapped");
                     Program.progression.ShowProgression(0);
+                    Console.WriteLine("Enter to continue");
+                    Console.ReadLine();
+                    break;
+                case "R":
+                    Console.WriteLine("Enter index number to remove (this is permanent):");
+                    int indexToRemove = Convert.ToInt16(Console.ReadLine());
+                    Program.progression.RemoveFromProgression(indexToRemove);
+                    Console.WriteLine("Removed");
+                    Program.progression.ShowProgression(0);
+                    Console.WriteLine("Enter to continue");
+                    Console.ReadLine();
+                    break;
+                case "q":
+                    break;
+                default:
+                    Console.WriteLine("Invalid input");
                     break;
             }
         }

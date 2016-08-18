@@ -1,0 +1,9 @@
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\MusicianJokes\MusicianJokes\bin\Debug\MusicianJokes.exe.config
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\MusicianJokes\MusicianJokes\bin\Debug\MusicianJokes.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\MusicianJokes\MusicianJokes\bin\Debug\MusicianJokes.pdb
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\MusicianJokes\MusicianJokes\obj\Debug\MusicianJokes.csprojResolveAssemblyReference.cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\MusicianJokes\MusicianJokes\obj\Debug\MusicianJokes.Form1.resources
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\MusicianJokes\MusicianJokes\obj\Debug\MusicianJokes.Properties.Resources.resources
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\MusicianJokes\MusicianJokes\obj\Debug\MusicianJokes.csproj.GenerateResource.Cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\MusicianJokes\MusicianJokes\obj\Debug\MusicianJokes.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\MusicianJokes\MusicianJokes\obj\Debug\MusicianJokes.pdb

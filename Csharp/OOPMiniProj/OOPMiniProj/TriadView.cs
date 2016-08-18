@@ -35,7 +35,7 @@ namespace OOPMiniProj
                 //instantiate the triad
                 Triad triad = new Triad(Program.scale, step);
                 //determine if this triad should be inverted
-                Console.WriteLine("Is this triad inverted? Enter '0' for no\n1 First inversion\n2 Second inversion");
+                Console.WriteLine("Is this triad inverted? Enter for no\n1 First inversion\n2 Second inversion");
                 int inversion = Convert.ToInt16(Console.ReadLine());
                 //apply same bounds-check and normalizing as with step above
                 if (inversion > 2)

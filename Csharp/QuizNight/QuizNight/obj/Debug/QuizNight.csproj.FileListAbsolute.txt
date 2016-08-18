@@ -1,0 +1,9 @@
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\QuizNight\QuizNight\bin\Debug\QuizNight.exe.config
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\QuizNight\QuizNight\bin\Debug\QuizNight.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\QuizNight\QuizNight\bin\Debug\QuizNight.pdb
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\QuizNight\QuizNight\obj\Debug\QuizNight.csprojResolveAssemblyReference.cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\QuizNight\QuizNight\obj\Debug\QuizNight.Form1.resources
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\QuizNight\QuizNight\obj\Debug\QuizNight.Properties.Resources.resources
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\QuizNight\QuizNight\obj\Debug\QuizNight.csproj.GenerateResource.Cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\QuizNight\QuizNight\obj\Debug\QuizNight.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\QuizNight\QuizNight\obj\Debug\QuizNight.pdb
