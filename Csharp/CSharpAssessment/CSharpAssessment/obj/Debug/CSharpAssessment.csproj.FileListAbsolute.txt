@@ -1,0 +1,10 @@
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\CSharpAssessment\CSharpAssessment\bin\Debug\CSharpAssessment.exe.config
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\CSharpAssessment\CSharpAssessment\obj\Debug\CSharpAssessment.csprojResolveAssemblyReference.cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\CSharpAssessment\CSharpAssessment\obj\Debug\CSharpAssessment.Form1.resources
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\CSharpAssessment\CSharpAssessment\obj\Debug\CSharpAssessment.Form2.resources
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\CSharpAssessment\CSharpAssessment\obj\Debug\CSharpAssessment.Properties.Resources.resources
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\CSharpAssessment\CSharpAssessment\obj\Debug\CSharpAssessment.csproj.GenerateResource.Cache
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\CSharpAssessment\CSharpAssessment\bin\Debug\CSharpAssessment.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\CSharpAssessment\CSharpAssessment\bin\Debug\CSharpAssessment.pdb
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\CSharpAssessment\CSharpAssessment\obj\Debug\CSharpAssessment.exe
+C:\Users\student\AndrewCouture\GitHub\August\Csharp\CSharpAssessment\CSharpAssessment\obj\Debug\CSharpAssessment.pdb
