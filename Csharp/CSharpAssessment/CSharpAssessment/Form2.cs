@@ -72,10 +72,13 @@ namespace CSharpAssessment
                         break;
                 }
                 this.Hide();
+                this.Dispose();
             }
             if (opType == 1)
             {
                 Program.fullCatalogue.RemoveFromCatalogue(titleInput.Text);
+                this.Hide();
+                this.Dispose();
             }
         }
     }

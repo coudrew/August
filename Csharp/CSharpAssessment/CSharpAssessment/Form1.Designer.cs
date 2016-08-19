@@ -172,9 +172,8 @@
             this.priceResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceResult.Location = new System.Drawing.Point(7, 197);
             this.priceResult.Name = "priceResult";
-            this.priceResult.Size = new System.Drawing.Size(51, 20);
+            this.priceResult.Size = new System.Drawing.Size(0, 20);
             this.priceResult.TabIndex = 3;
-            this.priceResult.Text = "label1";
             // 
             // isbnResult
             // 
@@ -182,9 +181,8 @@
             this.isbnResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.isbnResult.Location = new System.Drawing.Point(7, 141);
             this.isbnResult.Name = "isbnResult";
-            this.isbnResult.Size = new System.Drawing.Size(51, 20);
+            this.isbnResult.Size = new System.Drawing.Size(0, 20);
             this.isbnResult.TabIndex = 2;
-            this.isbnResult.Text = "label1";
             // 
             // authorResult
             // 
@@ -192,9 +190,8 @@
             this.authorResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.authorResult.Location = new System.Drawing.Point(7, 84);
             this.authorResult.Name = "authorResult";
-            this.authorResult.Size = new System.Drawing.Size(51, 20);
+            this.authorResult.Size = new System.Drawing.Size(0, 20);
             this.authorResult.TabIndex = 1;
-            this.authorResult.Text = "label1";
             // 
             // titleResult
             // 
@@ -202,9 +199,8 @@
             this.titleResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleResult.Location = new System.Drawing.Point(7, 30);
             this.titleResult.Name = "titleResult";
-            this.titleResult.Size = new System.Drawing.Size(51, 20);
+            this.titleResult.Size = new System.Drawing.Size(0, 20);
             this.titleResult.TabIndex = 0;
-            this.titleResult.Text = "label1";
             // 
             // addButton
             // 
@@ -224,6 +220,7 @@
             this.removeButton.TabIndex = 4;
             this.removeButton.Text = "Remove from Catalogue";
             this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
             // Form1
             // 

@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace CSharpAssessment
 {
-    public partial class Form1 : Form
+    public partial class 
+        Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
+
         }
 
         public static void DisplayMedia(string[] mediaData)
@@ -70,6 +73,14 @@ namespace CSharpAssessment
         {
             Form2 form2 = new Form2();
             form2.opType = 0;
+            form2.SetupFields();
+            form2.Show();
+        }
+
+        private void removeButton_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.opType = 1;
             form2.SetupFields();
             form2.Show();
         }

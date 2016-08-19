@@ -33,53 +33,15 @@ namespace CSharpAssessment
         public Media SearchCatalogue(string searchParam)
         {
             Media media = new Media("Not Found", "0.00");
-            int searchType = currentType;
-            switch (searchType)
+            foreach (Media item in Catalogue)
             {
-                case 0:
-                    foreach (MediaBook book in Catalogue)
-                    {
-                        if (book.Title == searchParam)
-                        {
-                            media = book;
-                            return media;
-                        }
-                    }
-                    break;
-                case 1:
-                    foreach (MediaPeriodical magazine in Catalogue)
-                    {
-                        if (magazine.Title == searchParam)
-                        {
-                            media = magazine;
-                            return media;
-                        }
-                    }
-                    break;
-                case 2:
-                    foreach (MediaAudio audio in Catalogue)
-                    {
-                        if (audio.Title == searchParam)
-                        {
-                            media = audio;
-                            return media;
-                        }
-                    }
-                    break;
-                case 3:
-                    foreach (MediaVideo video in Catalogue)
-                    {
-                        if (video.Title == searchParam)
-                        {
-                            media = video;
-                            return media;
-                        }
-                    }
-                    break;
-                default:
-                    media = new Media("Not Found", "0.00");
+                if (item.Title == searchParam)
+                {
+                    media = item;
                     return media;
+                }
             }
+            
             return media;
         }
         
