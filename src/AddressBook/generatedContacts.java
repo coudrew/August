@@ -14,8 +14,7 @@ public class generatedContacts {
     public static Contact contact2 = new Contact(new Person("Cletus","Couture", LocalDate.of(1948,10,3)),
             "9027366685", new Address("57", "Beachview Dr.","B1Y 1V6"));
 
-    static void addContacts(){
-        contacts.add(contact1);
-        contacts.add(contact2);
+    static void addContact(Contact contact){
+        contacts.add(contact);
     }
 }

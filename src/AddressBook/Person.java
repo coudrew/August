@@ -45,6 +45,11 @@ public class Person {
         this.birthDate = birthDate;
     }
 
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     //methods
     @Override
     public String toString(){

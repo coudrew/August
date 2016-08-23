@@ -5,10 +5,6 @@ import static AddressBook.generatedContacts.contacts;
  */
 public class Main {
     public static void main(String[] args){
-        generatedContacts.addContacts();
-
-        for (Contact c : contacts){
-            System.out.println(c);
-        }
+       CommandUI.display();
     }
 }

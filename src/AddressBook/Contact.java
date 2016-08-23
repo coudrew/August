@@ -84,6 +84,6 @@ public class Contact {
     //methods
     @Override
     public String toString(){
-        return String.format("Contact: %s %s", this.person, this.homeAddress);
+        return String.format("Contact: %s %s %s", this.person, this.mobilePhone, this.homeAddress);
     }
 }
