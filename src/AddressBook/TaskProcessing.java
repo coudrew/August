@@ -20,15 +20,23 @@ public class TaskProcessing {
             System.out.println(contact);
         }
     }
-    static String searchByFirst(String firstName){
-        String foundName = "Not Found";
-        for (Contact contact : contacts){
-            String name = contact.getPerson().getFirstName();
-            System.out.println(name);
-            if (name == firstName){
-                name =  contact.toString();
+    static int searchByFirstName(String firstName){
+        for (Contact c : contacts){
+            if (c.getPerson().getFirstName().contains(firstName)){
+                return contacts.indexOf(c);
             }
         }
-        return foundName;
+        return -1;
+    }
+
+    static void editDetails(int index, List<String> data){
+        contacts.get(index).getPerson().setFirstName(data.get(0));
+        contacts.get(index).getPerson().setLastName(data.get(1));
+        contacts.get(index).setMobilePhone(data.get(2));
+        contacts.get(index).setHomeAddress(new Address(data.get(3), data.get(4), data.get(5)));
+    }
+
+    static void removeContact(int index){
+        contacts.remove(index);
     }
 }

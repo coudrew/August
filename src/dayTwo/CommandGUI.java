@@ -1,7 +1,7 @@
 package dayTwo;
 
 import static dayTwo.generatedPeople.people;
-import java.time.LocalDate;
+//import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -32,23 +32,28 @@ public class CommandGUI {
 
         switch (choice) {
             case 1:
-                TaskProcessing.createEmployee(inputScreen());
+                //TaskProcessing.createEmployee(inputScreen());
                 display();
+                break;
             case 2:
                 index = findFirstName();
                 tempData = inputScreen();
                 TaskProcessing.editDetails(index, tempData);
                 display();
+                break;
             case 3:
                 TaskProcessing.removeEmployee(requestIndex());
                 display();
+                break;
             case 4:
                 TaskProcessing.printAll();
                 display();
+                break;
             case 5:
                 index = findFirstName();
                 System.out.println(people.get(index));
                 display();
+                break;
             case 6:
                 break;
         }

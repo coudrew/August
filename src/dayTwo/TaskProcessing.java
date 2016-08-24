@@ -1,6 +1,5 @@
 package dayTwo;
 
-import com.sun.prism.shader.Solid_TextureRGB_AlphaTest_Loader;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -9,18 +8,25 @@ import static dayTwo.generatedPeople.people;
  * Created by student on 23-Aug-16.
  */
 public class TaskProcessing {
-    static void createEmployee(List<String> data){
+    static MainWindow guiMain;
 
+    static void executeGUI(){
+        WelcomeWindow gui = new WelcomeWindow();
+    }
+    static void createEmployee(){
+
+        String[] bDay = guiMain.getTxtBirthdate().toString().split("/");
+        String[] hDay = guiMain.getTxtHireDate().toString().split("/");
 
         Employee temp = new Employee(
-                data.get(0),
-                data.get(1),
-                Short.parseShort(data.get(2)),
-                Double.parseDouble(data.get(3)),
-                LocalDate.of(Integer.parseInt(data.get(4)), Integer.parseInt(data.get(5)), Integer.parseInt(data.get(6))),
-                checkSex(data.get(7)),
-                data.get(8),
-                LocalDate.of(Integer.parseInt(data.get(9)), Integer.parseInt(data.get(10)), Integer.parseInt(data.get(11))));
+                guiMain.getTxtFirstName().toString(),
+                guiMain.getTxtLastName().toString(),
+                Short.parseShort(guiMain.getTxtHeight().toString()),
+                Double.parseDouble(guiMain.getTxtWeight().toString()),
+                LocalDate.of(Integer.parseInt(bDay[0]), Integer.parseInt(bDay[1]), Integer.parseInt(bDay[2])),
+                checkSex(guiMain.getTxtSex().toString()),
+                guiMain.getTxtPosition().toString(),
+                LocalDate.of(Integer.parseInt(hDay[0]), Integer.parseInt(hDay[1]), Integer.parseInt(hDay[2])));
         people.add(temp);
     }
     static void printAll(){

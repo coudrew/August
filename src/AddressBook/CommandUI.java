@@ -1,5 +1,5 @@
 package AddressBook;
-
+import static AddressBook.generatedContacts.contacts;
 import dayTwo.*;
 
 import java.util.ArrayList;
@@ -26,25 +26,32 @@ public class CommandUI {
             choice = input.nextInt();
         } while (choice < 1 || choice > 6);
 
-        List<Contact> tempData = new ArrayList<>();
-
+        List<String> tempData = new ArrayList<>();
+        int index;
         switch (choice){
             case 1:
                 TaskProcessing.createContact(inputScreen());
-                display();
+                break;
             case 2:
+                index = findFirstName();
+                tempData = inputScreen();
+                TaskProcessing.editDetails(index, tempData);
+                break;
             case 3:
+                System.out.println("Remove contact (CAN NOT BE UNDONE)");
+                index = findFirstName();
+                TaskProcessing.removeContact(index);
+                break;
             case 4:
                 TaskProcessing.printAll();
-                display();
-            case 5:
-                System.out.println("Enter First Name to search for:");
-                String nameSearchParam;
-                nameSearchParam = input.next();
-                System.out.println(TaskProcessing.searchByFirst(nameSearchParam));
-                display();
-            case 6:
                 break;
+            case 5:
+                index = findFirstName();
+                System.out.println(contacts.get(index));
+                break;
+            case 6:
+                Main.running = false;
+                return;
         }
     }
     static List<String> inputScreen(){
@@ -70,6 +77,11 @@ public class CommandUI {
         contactData.add(input.nextLine());
 
         return contactData;
+    }
+    static int findFirstName(){
+        System.out.print("Enter First Name to search for:");
+        String firstName = input.next();
+        return TaskProcessing.searchByFirstName(firstName);
     }
 
 }
