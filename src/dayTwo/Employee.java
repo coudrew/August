@@ -9,6 +9,7 @@ public class Employee extends Person{
     private String position;
     private LocalDate hireDate;
 
+
     public String getPosition() {
         return position;
     }

@@ -13,20 +13,17 @@ public class TaskProcessing {
     static void executeGUI(){
         WelcomeWindow gui = new WelcomeWindow();
     }
-    static void createEmployee(){
-
-        String[] bDay = guiMain.getTxtBirthdate().toString().split("/");
-        String[] hDay = guiMain.getTxtHireDate().toString().split("/");
+    static void createEmployee(List<String> data){
 
         Employee temp = new Employee(
-                guiMain.getTxtFirstName().toString(),
-                guiMain.getTxtLastName().toString(),
-                Short.parseShort(guiMain.getTxtHeight().toString()),
-                Double.parseDouble(guiMain.getTxtWeight().toString()),
-                LocalDate.of(Integer.parseInt(bDay[0]), Integer.parseInt(bDay[1]), Integer.parseInt(bDay[2])),
-                checkSex(guiMain.getTxtSex().toString()),
-                guiMain.getTxtPosition().toString(),
-                LocalDate.of(Integer.parseInt(hDay[0]), Integer.parseInt(hDay[1]), Integer.parseInt(hDay[2])));
+                data.get(0),
+                data.get(1),
+                Short.parseShort(data.get(2)),
+                Double.parseDouble(data.get(3)),
+                LocalDate.of(Integer.parseInt(data.get(4)), Integer.parseInt(data.get(5)), Integer.parseInt(data.get(6))),
+                checkSex(data.get(7)),
+                data.get(8),
+                LocalDate.of(Integer.parseInt(data.get(9)), Integer.parseInt(data.get(10)), Integer.parseInt(data.get(11))));
         people.add(temp);
     }
     static void printAll(){
@@ -44,22 +41,24 @@ public class TaskProcessing {
     }
 
     static void editDetails(int index, List<String> data){
-        people.get(index).setFirstName(data.get(0));
-        people.get(index).setLastName(data.get(1));
-        people.get(index).setHeight(Short.parseShort(data.get(2)));
-        people.get(index).setWeight(Double.parseDouble(data.get(3)));
-        people.get(index).setBirthDate(LocalDate.of(
-                        Integer.parseInt(data.get(4)),
-                        Integer.parseInt(data.get(5)),
-                        Integer.parseInt(data.get(6))));
-        people.get(index).setSex(checkSex(data.get(7)));
-        people.get(index).getEmployee().setPosition(data.get(8));
-        people.get(index).getEmployee().setHireDate(
-                LocalDate.of(
-                        Integer.parseInt(data.get(9)),
-                        Integer.parseInt(data.get(10)),
-                        Integer.parseInt(data.get(11)))
-        );
+        if (index >= 0) {
+            people.get(index).setFirstName(data.get(0));
+            people.get(index).setLastName(data.get(1));
+            people.get(index).setHeight(Short.parseShort(data.get(2)));
+            people.get(index).setWeight(Double.parseDouble(data.get(3)));
+            people.get(index).setBirthDate(LocalDate.of(
+                    Integer.parseInt(data.get(4)),
+                    Integer.parseInt(data.get(5)),
+                    Integer.parseInt(data.get(6))));
+            people.get(index).setSex(checkSex(data.get(7)));
+            people.get(index).getEmployee().setPosition(data.get(8));
+            people.get(index).getEmployee().setHireDate(
+                    LocalDate.of(
+                            Integer.parseInt(data.get(9)),
+                            Integer.parseInt(data.get(10)),
+                            Integer.parseInt(data.get(11)))
+            );
+        }
     }
     static SexType checkSex(String data){
         SexType sex;

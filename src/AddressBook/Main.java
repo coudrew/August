@@ -6,8 +6,8 @@ import static AddressBook.generatedContacts.contacts;
 public class Main {
     public static boolean running = true;
     public static void main(String[] args){
-        while (running == true) {
-            CommandUI.display();
-        }
+            //CommandUI.display();
+            WelcomeGUI welcomeGUI = new WelcomeGUI();
+
     }
 }
