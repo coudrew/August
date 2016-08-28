@@ -8,6 +8,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.*;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -238,11 +239,16 @@ public class MainWindow implements ActionListener{
                     createNew = true;
                 }
                 if(createNew) {
-                    TaskProcessing.createEmployee(getFieldsInfo());
-                    createEmployeeList();
-                    createNew = false;
-                    //btnUpdate.setText("Update");
-                    clearTextFields();
+                    try {
+
+                        TaskProcessing.newEmployee(getFieldsInfo());
+                        createEmployeeList();
+                        createNew = false;
+                        //btnUpdate.setText("Update");
+                        clearTextFields();
+                    } catch (SQLException createEx){
+                        JOptionPane.showMessageDialog(null, "ERROR ADDING EMPLOYEE" + System.lineSeparator() + createEx);
+                    }
                 }
                 else {
                     TaskProcessing.editDetails(employeeIndex, getFieldsInfo());
@@ -324,18 +330,20 @@ public class MainWindow implements ActionListener{
         data.add(txtHeight.getText());
         data.add(txtWeight.getText());
 
-        String[] dob = txtBirthdate.getText().split("-");
+        /*String[] dob = txtBirthdate.getText().split("-");
         data.add(dob[0]);
         data.add(dob[1]);
-        data.add(dob[2]);
+        data.add(dob[2]);*/
+        data.add(txtBirthdate.getText());
 
         data.add(txtSex.getText());
         data.add(txtPosition.getText());
 
-        String[] hireDate = txtHireDate.getText().split("-");
+        /*String[] hireDate = txtHireDate.getText().split("-");
         data.add(hireDate[0]);
         data.add(hireDate[1]);
-        data.add(hireDate[2]);
+        data.add(hireDate[2]);*/
+        data.add(txtHireDate.getText());
 
         return data;
     }

@@ -1,6 +1,7 @@
 package dayTwo;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 /**
@@ -19,7 +20,7 @@ public class EmployeeDB {
 
     String userName = MainProgram.arguments[0];
     String password = MainProgram.arguments[1];
-    String url = "jdbc:mysql://localhost:3306/augustDPP?UseSSL=false";
+    String url = "jdbc:mysql://localhost:3306/augustDPP?useSSL=false";
 
     public EmployeeDB() throws Exception {
         //load driver
@@ -27,16 +28,36 @@ public class EmployeeDB {
         //connect to db
         con = DriverManager.getConnection(url,userName,password);
     }
-    public List<String> queryAll() throws Exception {
+    public void queryAll() throws SQLException {
         statement = con.createStatement();
         rs = statement.executeQuery("SELECT * from employee");
+        metaData = rs.getMetaData();
         int columnCount = metaData.getColumnCount();
 
         while (rs.next()){
-            for (int i = 1; i <= columnCount; i++){
+            for (int i = 2; i <= columnCount; i++){
                 data.add(rs.getString(i));
             }
-            TaskProcessing.printAll(data);
+            TaskProcessing.createEmployee(data);
+            data.clear();
+            rowCount++;
         }
+
+
+    }
+
+    public void addEmployee(List<String> data) throws SQLException {
+        PreparedStatement statement = con.prepareStatement("INSERT INTO employee(firstname,lastname,height,weight," +
+                "birthdate,sextype,position,hiredate) VALUES (?,?,?,?,?,?,?,?)");
+        statement.setString(1, data.get(0));
+        statement.setString(2, data.get(1));
+        statement.setInt(3, Integer.parseInt(data.get(2)));
+        statement.setDouble(4, Double.parseDouble(data.get(3)));
+        statement.setDate(5, Date.valueOf(data.get(4)));
+        statement.setString(6, data.get(5));
+        statement.setString(7, data.get(6));
+        statement.setDate(8, Date.valueOf(data.get(7)));
+
+        statement.executeUpdate();
     }
 }

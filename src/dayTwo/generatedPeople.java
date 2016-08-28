@@ -17,6 +17,6 @@ public class generatedPeople {
     static void addPeople(){
         //people.add(andrew);
         //people.add(three);
-        people.add(empOne);
+        //  people.add(empOne);
     }
 }

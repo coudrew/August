@@ -1,5 +1,4 @@
 package dayTwo;
-import AddressBook.*;
 
 import static dayTwo.generatedPeople.people;
 /**
@@ -7,10 +6,11 @@ import static dayTwo.generatedPeople.people;
  */
 public class MainProgram {
     static String[] arguments;
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         arguments = args;
-        generatedPeople.addPeople();
+        //generatedPeople.addPeople();
         //TaskProcessing.executeGUI();
+        TaskProcessing.prepareDb();
         WelcomeWindow gui = new WelcomeWindow();
         //CommandGUI.display();
     }
