@@ -7,7 +7,7 @@ import java.util.List;
  * Created by andrewrcouture on 2016-08-26.
  */
 public class MasterList {
-    private static List<RentalItem> masterList = new ArrayList<>();
+    public static List<RentalItem> masterList = new ArrayList<>();
 
     static void addToMaster(RentalItem item){
         masterList.add(item);
@@ -28,20 +28,20 @@ public class MasterList {
     }
 
     static void generateMaster(){
-        Mixer mix1 = new Mixer("Smackie Mini", 50.00, Connector.PHONO_MINI, 8, "YES");
-        Mixer mix2 = new Mixer("Soundscrap Mega", 75.00, Connector.PHONO, 16, "YES");
+        Mixer mix1 = new Mixer("Goodenuff Mini USB", 50.00, Connector.PHONO_MINI, 8, "YES");
+        Mixer mix2 = new Mixer("SoundsCrap Mega", 75.00, Connector.PHONO, 16, "YES");
         Mixer mix3 = new Mixer("Yamahonk Ultra", 150.00, Connector.XLR, 24, "NO");
-        Mixer mix4 = new Mixer("All in a Heap Classic", 50.00, Connector.XLR, 32, "NO");
+        Mixer mix4 = new Mixer("Allin a Heap Classic", 50.00, Connector.XLR, 32, "NO");
 
         Amplifier amp1 = new Amplifier("Naive Poser", 75.00, Connector.XLR,45);
         Amplifier amp2 = new Amplifier("Naive Pro", 175.00, Connector.XLR,100);
         Amplifier amp3 = new Amplifier("ARSE System 1K", 155.00, Connector.NL4,1000);
         Amplifier amp4 = new Amplifier("Kustom BS", 300.00, Connector.NL4,1200);
 
-        Speaker speak1 = new Speaker("Smackie lil' Bastards", 35.00, Connector.PHONO_MINI, 40, SpkrSupport.STANDS, 1);
-        Speaker speak2 = new Speaker("Dorkville Junk Blasters", 45.00, Connector.PHONO, 40, SpkrSupport.STANDS, 1);
-        Speaker speak3 = new Speaker("ARC Overkill System", 400.00, Connector.NL4, 600, SpkrSupport.FLOWN, 0);
-        Speaker speak4 = new Speaker("Generec Stacks", 335.00, Connector.XLR, 200, SpkrSupport.WALL_MOUNT, 0);
+        Speaker speak1 = new Speaker("Goodenuffs", 35.00, Connector.PHONO_MINI, 40, SpkrSupport.STANDS, 1);
+        Speaker speak2 = new Speaker("Generec Monitor", 45.00, Connector.PHONO, 40, SpkrSupport.STANDS, 1);
+        Speaker speak3 = new Speaker("Overkill System", 400.00, Connector.NL4, 0, SpkrSupport.FLOWN, 0);
+        Speaker speak4 = new Speaker("Atomic Stacks", 335.00, Connector.XLR, 0, SpkrSupport.WALL_MOUNT, 0);
 
         Cable xlr1 = new Cable("XLR 25'", 5.00, Connector.XLR, 25);
         Cable xlr2 = new Cable("XLR 50'", 10.00, Connector.XLR, 50);

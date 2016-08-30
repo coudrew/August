@@ -1,5 +1,6 @@
 package JavaAssessment;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,7 +12,7 @@ public class Order {
     private Customer customer;
     private Double totalCost;
     private RoomRequirements roomRequirements;
-    private List<RentalItem> gearList;
+    private List<RentalItem> gearList = new ArrayList<>();
 
     public Order(int orderNumber, Customer customer, RoomRequirements roomRequirements){
         this.orderNumber = orderNumber;

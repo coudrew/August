@@ -141,6 +141,7 @@ public class CommandUI {
 
         TaskProcessing.currentOrder = new Order(TaskProcessing.orderNum, TaskProcessing.currentCustomer,
                 new RoomRequirements(roomLength,roomWidth,expectedCrowd,inputs));
+        TaskProcessing.processOrderRequirements();
     }
 
     static void createNewCustomer(){

@@ -1,5 +1,8 @@
 package JavaAssessment;
 
+import javax.sound.sampled.*;
+import java.util.List;
+
 /**
  * Created by andrewrcouture on 2016-08-26.
  */
@@ -20,7 +23,58 @@ public class TaskProcessing {
     }
 
     static void processOrderRequirements(){
+        int powerNeeded = currentOrder.getRoomRequirements().getRoomLength() * currentOrder.getRoomRequirements().getRoomWidth();
+        int ampNeeded = 0;
+        System.out.println(currentOrder.getRoomRequirements());
+        for (RentalItem item : MasterList.masterList){
+           if (item.getClass() == Mixer.class) {
+               Mixer mix = (Mixer)item;
+               if (mix.getChannels() >= currentOrder.getRoomRequirements().getNumberOfInputs()) {
+                   currentOrder.addGear(mix);
+                   break;
+               }
+           }
+        }
+        for (RentalItem item : MasterList.masterList){
+            if (item.getClass() == Speaker.class){
+                Speaker speaker = (Speaker) item;
+                if (speaker.getWattage() >= powerNeeded/2){
+                    currentOrder.addGear(speaker);
+                    ampNeeded += 1;
+                    break;
+                }
+            }
+        }
+
+        if (ampNeeded == 0){
+            for (RentalItem item : MasterList.masterList){
+                if (item.getClass() == Amplifier.class){
+                    Amplifier amplifier = (Amplifier)item;
+                    if (amplifier.getWattage() >= powerNeeded){
+                        currentOrder.addGear(amplifier);
+                        ampNeeded += 1;
+                        break;
+                    }
+                }
+            }
+        }
+        for (RentalItem gear : currentOrder.getGearList()) {
+            System.out.println(gear.retrieveSpecs());
+        }
+    }
+
+    /*private static Amplifier getAmp() {
 
     }
+
+    private static List<Cable> getCableList(RoomRequirements roomRequirements) {
+    }
+
+    private static Mixer getMixer(RoomRequirements roomRequirements) {
+    }
+
+    private static List<Speaker> getSpeakers(RoomRequirements roomRequirements) {
+
+    }*/
 
 }
