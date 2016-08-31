@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="calculator.css"/>
+    <title>calculator</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-2" id="calculator">
+                <div class="col-xs-10 col-xs-offset-1" id="displayScreen">
+                    <span ID="lblDisplayScreen"></span>
+                </div>
+                <div class="btnPad col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-xs-offset-1 btnRow">
+                            <button ID="btnClear" class="btnFunc">C</button>
+                            <button ID="btnSigned" class="btnFunc">+/-</button>
+                            <button ID="btnPercMod" class="btnOperator">%</button>
+                            <button ID="btnDiv" class="btnOperator">/</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-xs-offset-1 btnRow">
+                            <button ID="btn7" class="btnNumber">7</button>
+                            <button ID="btn8" class="btnNumber" >8</button>
+                            <button ID="btn9" class="btnNumber" >9</button>
+                            <button ID="btnMult" class="btnOperator">*</button>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-xs-12 col-xs-offset-1 btnRow">
+                            <button ID="btn4" class="btnNumber" >4</button>
+                            <button ID="btn5" class="btnNumber" >5</button>
+                            <button ID="btn6" class="btnNumber" >6</button>
+                            <button ID="btnSum" class="btnOperator">+</button>
+
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-xs-12 col-xs-offset-1 btnRow">
+                            <button ID="btn1" class="btnNumber" >1</button>
+                            <button ID="btn2" class="btnNumber" >2</button>
+                            <button ID="btn3" class="btnNumber" >3</button>
+                            <button ID="btnMinus" class="btnOperator">-</button>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-xs-offset-1 btnRow">
+                            <button ID="btn0" class="btnNumber" >0</button>
+                            <button ID="btnDot" class="btnNumber">.</button>
+                            <button ID="btnEquals" class="btnOperator">=</button>
+
+                        </div>
+                    </div>
+                 </div>
+
+            </div>
+            <div class="col-xs-4 col-xs-offset-1" id="sequenceDisplay">
+
+
+            </div>
+                    
+        </div>
+        
+    
+    </div>
+    <script src="calculator.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

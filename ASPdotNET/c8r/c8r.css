@@ -1,0 +1,61 @@
+﻿body {
+}
+
+#calculator {
+    top: 15vh;
+    height: 70vh;
+    border-radius: 2vw;
+    background-color:darkgrey;
+}
+
+#displayScreen {
+    top:5vh;
+    height:10vh;
+    border-radius: 0.5vw;
+    background-color:burlywood;
+}
+#lblDisplayScreen {
+    position:absolute;
+    top:2.5vh;
+    right:1vw;
+}
+
+#sequenceDisplay{
+    top:15vh;
+    height:70vh;
+    border-radius:0.5vw;
+    background-color:lightgray;
+}
+
+.btnPad{
+    position:absolute;
+    top:15vh;
+}
+.btnRow{
+    padding-top:2vh;
+    //padding-right:2vw;
+}
+.btnNumber{
+    font-size:2em;
+    width:6vw;
+    height:4vw;
+    border-radius:1vw;
+}
+.btnFunc{
+    font-size:2em;
+    width:6vw;
+    height:4vw;
+    border-radius:1vw;
+    background-color:cadetblue;
+}
+.btnOperator{
+    font-size:2em;
+    color:white;
+    width:6vw;
+    height:4vw;
+    border-radius:1vw;
+    background-color:firebrick;
+}
+#btn0{
+    width:12vw;
+}
