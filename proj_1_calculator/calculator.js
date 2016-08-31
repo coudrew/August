@@ -35,10 +35,13 @@ function Calculator(){
     this.enterFunction = function(data){
         switch (data){
             case "C":
+                this.leftOperand = "0";
+                this.rightOperand = "0";
                 this.displayOutput = "0"; //set output to 0
                 this.displayState = 0; //set state to replace output
                 this.updateDisplay(this.displayOutput); //update display output
                 this.displayState = 0; //return to state 0 (avoid leading zeroes, looks bad)
+                this.output = 0;
                 break;
             case "+/-":
                 this.displayOutput = /-/.test(this.displayOutput) ? this.displayOutput.substring(1) : "-" + this.displayOutput; //attach or remove minus sign
@@ -54,11 +57,21 @@ function Calculator(){
         if (data == "="){
             this.rightOperand = this.displayOutput;
             this.processOperations();
+            this.opState = 0;
         } else {
             this.currentOperator = data;
             this.displayState = 0;
-            this.opState == 0 ? this.leftOperand = this.displayOutput : this.rightOperand = this.displayOutput;
-            this.opState = 1;
+            if (this.opState == 0){
+                this.leftOperand = this.displayOutput;
+                this.opState = 1;
+            } else {
+                this.rightOperand = this.displayOutput;
+                this.processOperations();
+                this.leftOperand = this.output.toString();
+                this.displayState = 0;
+            }
+            //this.opState == 0 ? this.leftOperand = this.displayOutput : this.rightOperand = this.displayOutput;
+            //this.opState = 1;
         }
         console.log(`left: ${this.leftOperand}, right: ${this.rightOperand}, op: ${this.currentOperator}`);
     }
@@ -84,9 +97,9 @@ function Calculator(){
             default:
                 break;
         }
-        this.opState = 0;
+        //this.opState = 0;
         this.displayState = 0;
-        this.updateDisplay(this.output);
+        this.updateDisplay(this.output.toString());
     }
     
     this.init = function(){
