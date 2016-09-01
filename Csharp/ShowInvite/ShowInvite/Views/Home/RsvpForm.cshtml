@@ -1,0 +1,38 @@
+﻿@model ShowInvite.Models.GuestResponse
+
+@{
+    ViewBag.Title = "RsvpForm";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6 col-lg-offset-3">
+                <label>Your name:</label>
+                @Html.TextBoxFor(x => x.name, new {@class = "form-control"})
+                <label>Your email:</label>
+                @Html.TextBoxFor(x => x.email, new {@class = "form-control"})
+                <label>Your phone number:</label>
+                @Html.TextBoxFor(x => x.phone, new {@class = "form-control"})
+
+                <p>
+                    You comin?
+                    @Html.DropDownListFor(x => x.attending,
+                   new[] {
+                        new SelectListItem(){
+                            Text = "Sure",
+                            Value = bool.TrueString
+                        },
+                        new SelectListItem() {
+                            Text = "No I'm soooo busy",
+                            Value = bool.FalseString
+                    } }, "Choose" )
+                </p>
+                <button>submit</button>
+                </div>
+            </div>
+    </div>
+}
+
